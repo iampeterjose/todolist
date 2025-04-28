@@ -32,7 +32,7 @@ const TaskList = () => {
             {sortedTaskList.length > 0 ? (
                 <h1 className="text-xl font-semibold">Tasks</h1>
             ) : (
-                "No tasks"
+                "Write a task to get started!"
             )}
             <ul className="my-2">
                 {sortedTaskList.map((dateObj, dateIndex) => (
@@ -64,6 +64,7 @@ const TaskList = () => {
                                 >
                                     {editing.dateIndex === dateIndex && editing.taskKey === taskKey ? "Done" : "Edit"}
                                 </button>
+                                <p className="text-slate-400">|</p>
                                 <button
                                     className="text-red-700 hover:underline"
                                     onClick={() => handleRemove(dateIndex, taskKey)}
