@@ -66,7 +66,7 @@ const Input = () => {
         <input
           type="text"
           placeholder="Enter a task..."
-          className="px-2 py-1 text-base w-full border-b-2 border-slate-900 focus:outline-none"
+          className="px-2 py-1 text-base w-full border-b-2 border-slate-400 focus:outline-none"
           value={task}
           onChange={(e) => setTask(e.target.value)}
           required
